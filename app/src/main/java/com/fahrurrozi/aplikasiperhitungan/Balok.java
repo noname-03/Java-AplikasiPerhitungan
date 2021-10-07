@@ -50,6 +50,7 @@ public class Balok extends AppCompatActivity {
         String lebar = editlebar.getText().toString();
         String tinggi = edittinggi.getText().toString();
 
+        //aritmatika
         int keliling = 4 * (Integer.parseInt(panjang) + Integer.parseInt(lebar) + Integer.parseInt(tinggi));
         hkeliling.setText("nilai keliling adalah : " + keliling);
     }

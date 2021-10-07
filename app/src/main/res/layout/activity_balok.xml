@@ -54,7 +54,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="11dp"
-        android:text="nilai luas adalah : "
+        android:text="nilai luas yaitu : "
         app:layout_constraintBottom_toTopOf="@+id/h_volume"
         app:layout_constraintEnd_toEndOf="@+id/h_volume"
         app:layout_constraintTop_toBottomOf="@+id/hitung" />
