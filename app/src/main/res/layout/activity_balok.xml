@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Balok">
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="128dp"
+        android:hint="Masukan nilai panjang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="188dp"
+        android:hint="Masukan nilai lebar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="252dp"
+        android:hint="Masukan nilai tinggi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="65dp"
+        android:text="Hitung"
+        app:layout_constraintBottom_toTopOf="@+id/h_luas"
+        app:layout_constraintEnd_toEndOf="@+id/tinggi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/h_luas"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:text="nilai luas adalah : "
+        app:layout_constraintBottom_toTopOf="@+id/h_volume"
+        app:layout_constraintEnd_toEndOf="@+id/h_volume"
+        app:layout_constraintTop_toBottomOf="@+id/hitung" />
+
+    <TextView
+        android:id="@+id/h_volume"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="nilai volume adalah : "
+        app:layout_constraintBottom_toTopOf="@+id/h_keliling"
+        app:layout_constraintEnd_toEndOf="@+id/h_keliling"
+        app:layout_constraintStart_toStartOf="@+id/h_keliling"
+        app:layout_constraintTop_toBottomOf="@+id/h_luas" />
+
+    <TextView
+        android:id="@+id/h_keliling"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="196dp"
+        android:text="nilai keliling adalah : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h_volume" />
+</androidx.constraintlayout.widget.ConstraintLayout>
