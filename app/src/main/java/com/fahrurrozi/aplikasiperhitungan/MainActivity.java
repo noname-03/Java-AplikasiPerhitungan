@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         // memanggil id yang sudah di deklarasikan kedalam variabel
         viewButtonBalok = (Button)findViewById(R.id.balok);
         viewButtonLingkaran = (Button) findViewById(R.id.lingkaran);
-        viewButtonJajarGenjang = (Button) findViewById(R.id.jajargenjang);
+//        viewButtonJajarGenjang = (Button) findViewById(R.id.jajargenjang);
         viewButtonSegitiga = (Button) findViewById(R.id.segitiga);
 
         // aksi listener balok ( button ketika di klik )
@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // memanggil class segitiga
                 startActivity(new Intent(getApplicationContext(),Segitita.class));
+            }
+        });
+        //aksi listener lingkaran
+        viewButtonLingkaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Lingkaran.class));
             }
         });
 

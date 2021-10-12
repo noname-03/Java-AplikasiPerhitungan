@@ -48,6 +48,7 @@ public class Segitita extends AppCompatActivity {
         B_Keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 hitungkeliling();
             }
         });

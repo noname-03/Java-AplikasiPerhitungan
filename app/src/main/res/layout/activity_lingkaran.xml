@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lingkaran">
+
+    <EditText
+        android:id="@+id/eJariJari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="27dp"
+        android:hint="Masukan Nilai jari jari"
+        app:layout_constraintBottom_toTopOf="@+id/bLuas"
+        app:layout_constraintEnd_toEndOf="@+id/bLuas" />
+
+    <Button
+        android:id="@+id/bLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="22dp"
+        android:text="Mencari Luas Lingkaran"
+        app:layout_constraintBottom_toTopOf="@+id/bKeliling"
+        app:layout_constraintStart_toStartOf="@+id/bKeliling" />
+
+    <Button
+        android:id="@+id/bKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="14dp"
+        android:text="Mencari Keliling Lingkaran"
+        app:layout_constraintBottom_toTopOf="@+id/bDiameter"
+        app:layout_constraintEnd_toEndOf="@+id/bDiameter" />
+
+    <Button
+        android:id="@+id/bDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Mencari Diameter Lingkaran"
+        app:layout_constraintBottom_toTopOf="@+id/hLuas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="276dp"
+        android:text="Nilai Luas Adalah : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Nilai Keliling Adalah : "
+        app:layout_constraintStart_toStartOf="@+id/hLuas"
+        app:layout_constraintTop_toBottomOf="@+id/hLuas" />
+
+    <TextView
+        android:id="@+id/hDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Nilai Diameter Adalah : "
+        app:layout_constraintStart_toStartOf="@+id/hKeliling"
+        app:layout_constraintTop_toBottomOf="@+id/hKeliling" />
+</androidx.constraintlayout.widget.ConstraintLayout>
