@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Balok.class));
             }
         });
+        viewButtonSegitiga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // memanggil class segitiga
+                startActivity(new Intent(getApplicationContext(),Segitita.class));
+            }
+        });
 
     }
 }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Segitita">
+
+    <Button
+        android:id="@+id/hitungluas"
+        android:layout_width="237dp"
+        android:minWidth="235dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="20dp"
+        android:text="Hitung Luas"
+        app:layout_constraintBottom_toTopOf="@+id/hluas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Masukan nilai tinggi"
+        app:layout_constraintBottom_toTopOf="@+id/hitungluas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alas" />
+
+    <TextView
+        android:id="@+id/hluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="41dp"
+        android:text="Nilai Luasnya Adalah : "
+        app:layout_constraintBottom_toTopOf="@+id/sisi1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitungluas" />
+
+    <TextView
+        android:id="@+id/hkeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="94dp"
+        android:text="Nilai Kelilingnya Adalah : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitungkeliling" />
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="29dp"
+        android:hint="Masukan nilai alas"
+        app:layout_constraintBottom_toTopOf="@+id/tinggi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hitungkeliling"
+        android:layout_width="237dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:text="Hitung Keliling"
+        app:layout_constraintBottom_toTopOf="@+id/hkeliling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sisi3" />
+
+    <EditText
+        android:id="@+id/sisi2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="7dp"
+        android:hint="Masukan nilai sisi 2"
+        app:layout_constraintBottom_toTopOf="@+id/sisi3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sisi1" />
+
+    <EditText
+        android:id="@+id/sisi3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="28dp"
+        android:hint="Masukan nilai sisi 3"
+        app:layout_constraintBottom_toTopOf="@+id/hitungkeliling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sisi2" />
+
+    <EditText
+        android:id="@+id/sisi1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="11dp"
+        android:hint="Masukan nilai sisi 1"
+        app:layout_constraintBottom_toTopOf="@+id/sisi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hluas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

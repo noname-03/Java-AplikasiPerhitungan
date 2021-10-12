@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiPerhitungan">
         <activity
+            android:name=".Segitita"
+            android:exported="true" />
+        <activity
             android:name=".Balok"
             android:exported="true" />
         <activity

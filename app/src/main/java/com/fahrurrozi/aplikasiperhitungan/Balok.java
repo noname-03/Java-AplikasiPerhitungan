@@ -24,10 +24,10 @@ public class Balok extends AppCompatActivity {
         setContentView(R.layout.activity_balok);
 
         //inisialisasi
-        editpanjang = findViewById(R.id.panjang);
+        editpanjang = findViewById(R.id.alas);
         editlebar = findViewById(R.id.lebar);
         edittinggi = findViewById(R.id.tinggi);
-        bhitung = findViewById(R.id.hitung);
+        bhitung = findViewById(R.id.hitungluas);
         hluas = findViewById(R.id.h_luas);
         hkeliling = findViewById(R.id.h_keliling);
         hvolume = findViewById(R.id.h_volume);
