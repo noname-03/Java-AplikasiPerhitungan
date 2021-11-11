@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".JajarGenjanggg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:text="MENGHITUNG JAJAR GENJANG"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sisi Alas"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/sisiAlasL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nilai Sisi Alas"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#9F0C0C0C"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tinggi"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/TinggiJL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nilai Tinggi"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#9F0C0C0C"/>
+
+    <Button
+        android:id="@+id/btn_hitungLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Hitung Luas"
+        android:textSize="20sp"
+        app:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hasil_Luas"
+        android:text="Nilai Luas Adalah : "
+        android:gravity="left"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        android:textColor="#03A9F4"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sisi Alas"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/sisiAlas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nilai Sisi Alas"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#9F0C0C0C"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sisi Miring"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/sisiMiring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nilai Sisi Miring"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#9F0C0C0C"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tinggi"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/TinggiJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nilai Tinggi"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="#9F0C0C0C"/>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Hitung Keliling"
+        android:textSize="20sp"
+        app:backgroundTint="@color/purple_500" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hasil_Keliling"
+        android:text="Nilai Keliling Adalah : "
+        android:gravity="left"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        android:textColor="#03A9F4"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>

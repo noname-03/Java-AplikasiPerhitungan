@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,17 +14,22 @@ public class MainActivity extends AppCompatActivity {
     private Button viewButtonLingkaran;
     private Button viewButtonSegitiga;
     private Button viewButtonJajarGenjang;
+    private  Button ViewWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //security to not be use screen shoot
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
 
         // memanggil id yang sudah di deklarasikan kedalam variabel
         viewButtonBalok = (Button)findViewById(R.id.balok);
         viewButtonLingkaran = (Button) findViewById(R.id.lingkaran);
 //        viewButtonJajarGenjang = (Button) findViewById(R.id.jajargenjang);
         viewButtonSegitiga = (Button) findViewById(R.id.segitiga);
+        ViewWeb = (Button) findViewById(R.id.webview);
 
         // aksi listener balok ( button ketika di klik )
         viewButtonBalok.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Lingkaran.class));
+            }
+        });
+        //aksi listener webview
+        ViewWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),webview.class));
             }
         });
 

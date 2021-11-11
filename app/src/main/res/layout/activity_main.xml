@@ -7,14 +7,25 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/webview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Web View"
+        app:layout_constraintBottom_toTopOf="@+id/lingkaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segitiga" />
+
+    <Button
         android:id="@+id/segitiga"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="14dp"
-        android:layout_marginBottom="7dp"
         android:text="Segitiga"
-        app:layout_constraintBottom_toTopOf="@+id/lingkaran"
+        app:layout_constraintBottom_toTopOf="@+id/webview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/balok" />
@@ -48,13 +59,13 @@
         android:id="@+id/lingkaran"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="289dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="237dp"
         android:text="Lingkaran"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/segitiga" />
+        app:layout_constraintTop_toBottomOf="@+id/webview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
