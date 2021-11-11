@@ -16,19 +16,21 @@
         app:layout_constraintBottom_toTopOf="@+id/lingkaran"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/segitiga" />
+        app:layout_constraintTop_toBottomOf="@+id/balok" />
 
     <Button
         android:id="@+id/segitiga"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="54dp"
         android:layout_marginStart="14dp"
+        android:layout_marginTop="63dp"
         android:layout_marginEnd="14dp"
+        android:layout_marginBottom="53dp"
         android:text="Segitiga"
-        app:layout_constraintBottom_toTopOf="@+id/webview"
+        app:layout_constraintBottom_toBottomOf="@+id/webview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balok" />
+        app:layout_constraintTop_toTopOf="@+id/balok" />
 
     <Button
         android:id="@+id/balok"
@@ -37,12 +39,25 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="186dp"
         android:layout_marginEnd="14dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="62dp"
         android:text="Balok"
-        app:layout_constraintBottom_toTopOf="@+id/segitiga"
+        app:layout_constraintBottom_toTopOf="@+id/webview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="176dp"
+        android:text="Scroll View"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lingkaran" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,17 +68,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lingkaran" />
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
 
     <Button
         android:id="@+id/lingkaran"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="237dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="7dp"
         android:text="Lingkaran"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/scroll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/webview" />

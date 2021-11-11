@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button viewButtonSegitiga;
     private Button viewButtonJajarGenjang;
     private  Button ViewWeb;
+    private  Button ViewScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 //        viewButtonJajarGenjang = (Button) findViewById(R.id.jajargenjang);
         viewButtonSegitiga = (Button) findViewById(R.id.segitiga);
         ViewWeb = (Button) findViewById(R.id.webview);
+        ViewScroll = (Button) findViewById(R.id.scroll);
 
         // aksi listener balok ( button ketika di klik )
         viewButtonBalok.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),webview.class));
             }
         });
-
+        //aksi listener scroll view
+        ViewScroll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Scroll.class));
+            }
+        });
     }
 }
