@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button viewButtonJajarGenjang;
     private  Button ViewWeb;
     private  Button ViewScroll;
+    private  Button viewrb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // memanggil id yang sudah di deklarasikan kedalam variabel
         viewButtonBalok = (Button)findViewById(R.id.balok);
         viewButtonLingkaran = (Button) findViewById(R.id.lingkaran);
-//        viewButtonJajarGenjang = (Button) findViewById(R.id.jajargenjang);
+        viewrb = (Button)findViewById(R.id.rb);
         viewButtonSegitiga = (Button) findViewById(R.id.segitiga);
         ViewWeb = (Button) findViewById(R.id.webview);
         ViewScroll = (Button) findViewById(R.id.scroll);
@@ -67,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Scroll.class));
+            }
+        });
+        //aksi listener radio button
+        viewrb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),RadioButton.class));
             }
         });
     }
